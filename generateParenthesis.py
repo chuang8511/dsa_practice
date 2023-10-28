@@ -1,3 +1,4 @@
+import pdb
 class Solution:
     def generateParenthesis(self, n: int):
         # only add open parenthesis if openN < n
@@ -24,6 +25,8 @@ class Solution:
         return res
 
 solution = Solution()
+
+pdb.set_trace()
 
 testCases = [1,2,3,4,5,6]
 
