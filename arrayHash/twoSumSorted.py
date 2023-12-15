@@ -1,4 +1,4 @@
-class Solution:
+joclass Solution:
     def twoSum(self, numbers, target):
         l, r = 0, len(numbers) - 1
 
