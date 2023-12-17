@@ -1,3 +1,5 @@
+# Need to solve it again!
+
 class Solution:
     # def minCostClimbingStairs(self, cost: list[int]) -> int:
     #     return min(self.getMinCost(cost, 0), self.getMinCost(cost, 1))

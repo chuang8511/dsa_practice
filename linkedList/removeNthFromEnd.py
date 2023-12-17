@@ -1,3 +1,5 @@
+# Need to solve it again!
+
 # Definition for singly-linked list.
 # The solution is different from NeetCode!
 # todo: please try to do solution like NeetCode. It is much easier

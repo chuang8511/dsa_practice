@@ -1,3 +1,5 @@
+# Need to solve it again!
+
 # It is kind of math problem.
 # Please review it again later.
 class ListNode:
