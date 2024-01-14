@@ -9,3 +9,6 @@ Directory structure
 |-- problem platform and number (leetcode_1071)
 |--- solution.py
 |--- test_solution.py
+
+command line
+python3 -m unittest directory/test_file.py
