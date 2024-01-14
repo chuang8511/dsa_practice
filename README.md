@@ -11,4 +11,5 @@ Directory structure
 |--- test_solution.py
 
 command line
-python3 -m unittest directory/test_file.py
+cd directory
+python3 -m unittest test_file.py
