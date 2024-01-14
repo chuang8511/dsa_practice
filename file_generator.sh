@@ -5,7 +5,7 @@ ProblemType="$1"
 PlatformNumber="$2"
 
 # Create the directory structure with appropriate formatting
-mkdir "${ProblemType}/${PlatformNumber}"  # Create parent and child directories together
+mkdir "${ProblemType}/${PlatformNumber}"  
 
 # Create empty Python files with proper extensions
 touch "${ProblemType}/${PlatformNumber}/solution.py"
