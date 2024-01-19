@@ -9,4 +9,13 @@ mkdir "${ProblemType}/${PlatformNumber}"
 
 # Create empty Python files with proper extensions
 touch "${ProblemType}/${PlatformNumber}/solution.py"
-touch "${ProblemType}/${PlatformNumber}/test_solution.py"
+
+# Check if ProblemType is "tree"
+if [ "$ProblemType" == "tree" ]; then
+    # Copy tree_node.py and test_solution.py if true
+    cp "tree/leetcode_104/tree_node.py" "${ProblemType}/${PlatformNumber}/tree_node.py"
+    cp "tree/leetcode_104/test_solution.py" "${ProblemType}/${PlatformNumber}/test_solution.py"
+else
+    # Create an empty test_solution.py if ProblemType is not "tree"
+    touch "${ProblemType}/${PlatformNumber}/test_solution.py"
+fi
