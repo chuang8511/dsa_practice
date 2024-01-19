@@ -1,4 +1,3 @@
-import pdb
 import unittest
 
 from solution import Solution
@@ -7,7 +6,6 @@ from tree_node import BuildTreeNode
 
 class TestSolution(unittest.TestCase):
     def test_maxDepth(self):
-        # pdb.set_trace()
         solution = Solution()
         builder = BuildTreeNode()
 
