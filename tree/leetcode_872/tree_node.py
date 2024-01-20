@@ -17,15 +17,19 @@ class BuildTreeNode:
         root_queue.append(root_node)
         while queue:
             left_val = queue.popleft()
-            right_val = queue.popleft()
+            if queue:
+                right_val = queue.popleft()
+    
             root_to_be_linked = root_queue.popleft()
 
             if left_val:
                 left_node = TreeNode(left_val)
+                left_val = None
                 root_queue.append(left_node)
                 root_to_be_linked.left = left_node
             if right_val:
                 right_node = TreeNode(right_val)
+                right_val = None
                 root_queue.append(right_node)
                 root_to_be_linked.right = right_node
         return root_node
