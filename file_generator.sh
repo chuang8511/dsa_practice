@@ -17,5 +17,5 @@ if [ "$ProblemType" == "tree" ]; then
     cp "tree/leetcode_104/test_solution.py" "${ProblemType}/${PlatformNumber}/test_solution.py"
 else
     # Create an empty test_solution.py if ProblemType is not "tree"
-    touch "${ProblemType}/${PlatformNumber}/test_solution.py"
+    cp "test_code_sample.py" "${ProblemType}/${PlatformNumber}/test_solution.py"
 fi
