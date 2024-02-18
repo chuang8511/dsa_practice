@@ -15,7 +15,7 @@ if [ "$ProblemType" == "tree" ]; then
     # Copy tree_node.py and test_solution.py if true
     cp "tree/leetcode_104/tree_node.py" "${ProblemType}/${PlatformNumber}/tree_node.py"
     cp "tree/leetcode_104/test_solution.py" "${ProblemType}/${PlatformNumber}/test_solution.py"
-elif ["$ProblemType" == "linkedList" ]; then
+elif [ "$ProblemType" == "linkedList" ]; then
     cp "linkedList/leetcode_2095/linked_list.py" "${ProblemType}/${PlatformNumber}/linked_list.py"
     cp "linkedList/leetcode_2095/test_solution.py" "${ProblemType}/${PlatformNumber}/test_solution.py"
 else
