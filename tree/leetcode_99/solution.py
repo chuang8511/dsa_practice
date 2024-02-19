@@ -1,3 +1,5 @@
+# memo
+# In bst_swap, add another argument that can compare with the current node value
 # # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
