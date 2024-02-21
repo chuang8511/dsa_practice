@@ -1,4 +1,4 @@
-# Concept: 
+# Concept:  #
 # Walk all cities in a province first.
 # Walk all array but return 0 if the city has been visited.
 class Solution:
