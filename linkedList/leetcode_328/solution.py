@@ -5,19 +5,17 @@ class ListNode:
         self.next = next
 class Solution:
     def oddEvenList(self, head: [ListNode]) -> [ListNode]:
-        if head is None or head.next is None or head.next.next is None:
+        if not head:
             return head
-        
+            
+        odd, even, evenHead = head, head.next, head.next
 
-        # fir_node = head
-        # sec_node = head.next
-        # pointer = 2
-        # start_node = head.next.next
-        # while start_node:
-        #     if pointer % 2 == 0:
-        #         fir_node.next.val = start_node.val
-                
+        while even and even.next:
+            odd.next = odd.next.next
+            odd = odd.next
 
-        #     else:
-        #         sec_node.next = start_node
-        #     pointer += 1
+            even.next = even.next.next
+            even = even.next
+        odd.next = evenHead
+
+        return head
