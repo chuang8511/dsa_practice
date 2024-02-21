@@ -1,6 +1,7 @@
 # Concept:  #
 # Walk all cities in a province first.
 # Walk all array but return 0 if the city has been visited.
+# Problem: https://leetcode.com/problems/number-of-provinces/description/?envType=study-plan-v2&envId=leetcode-75
 class Solution:
     def findCircleNum(self, isConnected: list[list[int]]) -> int:
         ROWS = len(isConnected)
