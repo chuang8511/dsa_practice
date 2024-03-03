@@ -1,4 +1,4 @@
-# to be checked
+# to be checked: https://leetcode.com/problems/evaluate-division/solutions/3543256/image-explanation-easiest-concise-complete-intuition-c-java-python/?envType=study-plan-v2&envId=leetcode-75
 class Solution:
     def calcEquation(self, equations: list[list[str]], values: list[float], queries: list[list[str]]) -> list[float]:
         return
