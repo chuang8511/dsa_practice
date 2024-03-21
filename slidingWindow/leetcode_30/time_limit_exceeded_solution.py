@@ -1,3 +1,6 @@
+# The difference is that there are only word_len types of starting points.
+# In my solution, the starting points are len(s) types.
+# So, it is over the limitation.
 from collections import defaultdict
 class Solution:
     def findSubstring(self, s: str, words: list[str]) -> list[int]:
