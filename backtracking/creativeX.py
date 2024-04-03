@@ -54,7 +54,25 @@ class Soultion:
       j += 1
 
     return self.res
-    
-      
+
 a = Soultion()
 print(a.solution(5, [1,2,3]))
+
+def coin_combinations(coins, target):
+    def backtrack(start, remain, path):
+        if remain == 0:
+            result.append(path)
+            return
+        if remain < 0:
+            return
+        for i in range(start, len(coins)):
+            backtrack(i, remain - coins[i], path + [coins[i]])
+    
+    result = []
+    backtrack(0, target, [])
+    return result
+
+
+coins = [1, 2, 3]
+target = 5
+print(coin_combinations(coins, target))    
