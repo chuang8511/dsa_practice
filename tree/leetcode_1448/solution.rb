@@ -1,12 +1,6 @@
+require "../builder"
 # Definition for a binary tree node.
-class TreeNode
-    attr_accessor :val, :left, :right
-    def initialize(val = 0, left = nil, right = nil)
-        @val = val
-        @left = left
-        @right = right
-    end
-end
+
 # @param {TreeNode} root
 # @return {Integer}
 def good_nodes(root)
@@ -20,45 +14,6 @@ def good_nodes(root)
     end
     return count
 end
-
-class BuilderTreeNode
-    def build(nums)
-        data = nums.shift
-        root = TreeNode.new(val=data)
-        queue = [root]
-        while queue.length > 0
-            node = queue.shift
-            if node
-                data = nums.shift
-                new_node1 = data.nil? ? nil : TreeNode.new(val=data)
-                data = nums.shift
-                new_node2 = data.nil? ? nil : TreeNode.new(val=data)
-                queue.append(new_node1)
-                queue.append(new_node2)
-                node.left = new_node1
-                node.right = new_node2
-            end
-        end
-        return root
-    end
-
-    def traverse(root)
-        queue = [root]
-        nums = []
-        while queue.length > 0 && queue.compact.length != 0
-            node = queue.shift
-            if node
-                nums.append(node.val)
-                queue.append(node.left)
-                queue.append(node.right)
-            elsif 
-                nums.append(nil)
-            end
-        end
-        return nums
-    end
-end
-
 test_cases = [
     {
         input: [3,1,4,3,nil,1,5],
