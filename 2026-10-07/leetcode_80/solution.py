@@ -1,18 +1,11 @@
-# import unittest
-# from solution import Solution
-
-# class TestSolution(unittest.TestCase):
-#     def test_method(self):
-#         solution = Solution()
-
-#         result = solution.method()
-#         self.assertEqual(result, 0)
-
-#         result = solution.method()
-#         self.assertEqual(result, 0)
-
-#         result = solution.method()
-#         self.assertEqual(result, 0)
+class Solution:
+    def removeDuplicates(self, nums: list[int]) -> int:
+        i = 0
+        for n in nums:
+            if i < 2 or n > nums[i-2]:
+                nums[i] = n
+                i += 1
+        return i
 
 
 if __name__ == "__main__":
@@ -24,10 +17,11 @@ if __name__ == "__main__":
     ]
 
     for nums, expected_k, expected_nums in cases:
-        k = Solution().function name(nums)
+        k = Solution().removeDuplicates(nums)
         if k != expected_k:
             raise AssertionError(f"fail at {nums}: got {k}, expected {expected_k}")
         if nums[:k] != expected_nums:
             raise AssertionError(f"fail at {nums}: got {nums[:k]}, expected {expected_nums}")
 
     print("All tests passed")
+
